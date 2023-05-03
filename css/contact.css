@@ -1,0 +1,140 @@
+header { background: #fff }
+.lang__content { color: #000 }
+.lang-arrow { border: 1px solid #c7c7c7 }
+.lang-arrow svg { fill: #000 }
+.menu__item-link { color: #000!important }
+.btn-open { background: #3200f0!important }
+.btn-open span { background: #fff!important }
+
+.section-9 { 
+    background: #f1f1f1;
+    padding-top: 120px;
+    margin-bottom: 100px; 
+    padding-left: 30px; 
+    padding-right: 30px;    
+}
+
+
+.contact-box {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-left: 19px;
+    margin-bottom: 20px;
+    transition: all .3s ease;
+    background-color: #df4847;
+    color: white;
+    border-radius: 22px;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    min-height: 245px;
+    padding-left: 20px;
+}
+
+.contact-box__div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-box__div a {
+    color: #fff;
+}
+
+.contact-subtitle {
+    margin-bottom: 37px!important;
+    font-size: 25px !important;
+    font-weight: 600 !important;
+    color: gray !important;
+}
+
+.section-10 {
+    background: #df4947;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    padding-left: 30px;
+    padding-right: 40px;
+}
+
+.big {
+    font-size: 45px;
+    font-weight: 600;
+    color: white;
+}
+
+.little {
+    color: #ffffff94!important;
+    width: 70%!important;
+    font-size: 16px;
+}
+
+
+.ui-field__label {
+    position: relative;
+    width: 100%;
+}
+
+label {
+    display: inline-block;
+}
+
+
+.white-input {
+    padding: 45px !important;
+    background: #fff;
+    border-radius: 15px !important;
+}
+
+input {
+    display: block;
+    width: 100%;
+    min-height: 56px;
+    padding: 17px 18px 17px;
+    border: 1px solid #f5f5f5;
+    border-radius: 10px;
+    overflow: hidden;
+    color: var(--text-main-color);
+    font-size: 16px;
+    font-family: inherit;
+    line-height: 20px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    background-color: #f5f5f5 !important;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: border-color .2s ease-in-out;
+    transition: border-color .2s ease-in-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+}
+
+label {
+    position: relative;
+    width: 100%;
+}
+
+
+label span {
+    position: absolute;
+    top: 20px;
+    left: 16px;
+    color: grey;
+    font-size: 15px;
+    line-height: 1;
+    opacity: 0.5;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    pointer-events: none;
+    font-weight: 600;
+}
+
+.btn-form {
+    background: #df4947!important;
+    border: none!important;
+    color: white!important;
+    width: 100%!important;
+    border-radius: 10px!important;
+    transition: all .3s ease;
+}

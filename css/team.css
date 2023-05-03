@@ -1,0 +1,60 @@
+header { background: #fff }
+.lang__content { color: #000 }
+.lang-arrow { border: 1px solid #c7c7c7 }
+.lang-arrow svg { fill: #000 }
+.menu__item-link { color: #000!important }
+.btn-open { background: #3200f0!important }
+.btn-open span { background: #fff!important }
+
+.section-10 {
+    padding-top: 100px;
+}
+
+.section-10__title {
+    font-size: 37px;
+    text-transform: none;
+}
+
+.section-10__content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-10__item img {
+    max-width: 400px;
+    width: 100%;
+}
+
+.section-10__item h4 {
+    margin-top: 10px;
+    font-weight: 800;
+    color: #383838;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.section-10__item h5 {
+    color: #888888;
+    font-size: 13px;
+}
+
+.section-10__content a {
+    color: #545454;
+}
+
+.line {
+    border-bottom: 2px;
+    border-bottom-style: solid;
+    width: 45px;
+    padding-top: 12px;
+    border-color: #eaeaea;
+    margin-bottom: 15px;
+}
+
+
+@media only screen and (max-width: 990px) {
+    
+    .section-10__content, .section-10__title { text-align: center }
+}

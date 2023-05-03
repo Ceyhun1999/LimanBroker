@@ -1,0 +1,45 @@
+header { background: #fff }
+.lang__content { color: #000 }
+.lang-arrow { border: 1px solid #c7c7c7 }
+.lang-arrow svg { fill: #000 }
+.menu__item-link { color: #000!important }
+.btn-open { background: #3200f0!important }
+.btn-open span { background: #fff!important }
+
+.section-6 { background: #f1f1f1; padding-top: 100px }
+
+.companies {
+    height: inherit;
+    overflow: inherit;
+}
+
+.section-6 span {
+    background-size: 55%;
+    width: 25%!important;
+    height: 122px;
+    opacity: .3;
+    display: inline-block;
+}
+
+
+
+
+.section-6__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-6__text {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 768px){
+    .section-6 span { width: 33%!important }
+}
+
+@media only screen and (max-width: 600px){
+    .section-6 span { width: 50%!important }
+}

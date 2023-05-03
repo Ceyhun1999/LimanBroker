@@ -18,3 +18,8 @@
     src: url("cocosharplight.ttf") format("truetype");
     font-weight: 100;
 }
+@font-face {
+    font-family: "CocoSharp";
+    src: url("Icons-startup-x-template.woff2") format("truetype");
+    font-weight: 100;
+}

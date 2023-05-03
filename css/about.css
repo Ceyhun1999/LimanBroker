@@ -1,0 +1,69 @@
+header { background: #fff }
+.lang__content { color: #000 }
+.lang-arrow { border: 1px solid #c7c7c7 }
+.lang-arrow svg { fill: #000 }
+.menu__item-link { color: #000!important }
+.btn-open { background: #3200f0!important }
+.btn-open span { background: #fff!important }
+
+.section-8 {
+    padding-top: 150px;
+    margin-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: #f1f1f1;
+    padding-bottom: 50px;
+}
+
+.breadcumb {
+    margin-bottom: 30px;
+}
+
+.breadcumb a {
+    border-color: white!important;
+    background-color: white!important;
+    color: black!important;
+    padding: 10px 20px!important;
+    border-radius: 35px!important;
+    margin-right: 10px!important;
+    text-decoration: none!important;
+    transition: all .3s ease!important;
+}
+
+.about-title, .about-subtitle {
+    font-size: 25px;
+    color: grey;
+    font-weight: 600;
+    line-height: 1.12;
+    letter-spacing: -0.02em;
+    font-family: 'CocoSharp';
+}
+
+.about-subtitle {
+    color: #000;
+}
+.about-text {
+    font-size: 17px;
+    color: grey;
+    font-family: 'CocoSharp';
+}
+
+.breadcumb .active {
+    border-color: #df4847!important;
+    background-color: #df4847!important;
+    color: white!important;
+}
+
+.breadcumb a:hover {
+    border-color: #df4847!important;
+    background-color: #df4847!important;
+    color: white!important;
+}
+
+.breadcumb a:first-child {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+
+

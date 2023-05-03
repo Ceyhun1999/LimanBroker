@@ -1,18 +1,16 @@
 const swiper = new Swiper(".swiper", {
-
     slidesPerView: 1,
     loop: true,
 
-    /*autoplay: {
+    autoplay: {
         delay: 2500,
         disableOnInteraction: false,
-    },*/
+    },
 
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
         dynamicBullets: true,
-
     },
 
     navigation: {
@@ -29,6 +27,17 @@ const menu = document.querySelector(".menu");
 const dropdownLang = document.querySelector(".dropdown__lang");
 const langArrow = document.querySelector(".lang-arrow");
 const btnOpen = document.querySelector(".btn-open");
+const questionText = document.querySelectorAll(".question-text");
+
+questionText.forEach((item) => {
+    const questionDrop = item.nextElementSibling;
+    const questionBtn = item.querySelector(".question-btn");
+
+    item.addEventListener("click", () => {
+        questionDrop.classList.toggle("question-active");
+        questionBtn.classList.toggle("question-active__btn");
+    });
+});
 
 function hoverEffectFunc1() {
     header.classList.add("headerHoverBackg");
@@ -74,4 +83,31 @@ window.addEventListener("scroll", () => {
 lang.addEventListener("click", () => {
     dropdownLang.classList.toggle("animationDrowLang");
     langArrow.classList.toggle("animationArrowLang");
+});
+
+
+var inputs = document.querySelectorAll('input[type="text"]');
+
+// проходимся по каждому инпуту и добавляем обработчик клика и blur
+inputs.forEach(function(input) {
+  input.addEventListener('click', function() {
+    // получаем родительский элемент label
+    var label = this.parentElement;
+    // находим соседний элемент span
+    var span = label.querySelector('span');
+    // сохраняем исходные значения свойств top и font-size
+    var originalTop = span.style.top;
+    var originalFontSize = span.style.fontSize;
+    // меняем свойство top на 10px
+    span.style.top = '10px';
+    // меняем размер шрифта на 14px
+    span.style.fontSize = '12px';
+    
+    // добавляем обработчик события blur
+    input.addEventListener('blur', function() {
+      // возвращаем исходные значения свойств top и font-size
+      span.style.top = originalTop;
+      span.style.fontSize = originalFontSize;
+    });
+  });
 });

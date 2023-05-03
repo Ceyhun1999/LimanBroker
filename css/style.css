@@ -19,6 +19,8 @@ header {
     gap: 20px;
 }
 
+.logo img { width: 200px }
+
 
 /* ------------------- STYLING MENU ITEMS ----------------- */
 .menu {
@@ -45,7 +47,7 @@ header {
 .menu__item a {
     display: flex;
     align-items: center;
-    font: 800 16px/1.32 "CocoSharp";
+    font: 800 16px "CocoSharp";
     color: #fff;
     cursor: pointer;
     min-height: 92px;
@@ -62,7 +64,6 @@ header {
 .bir { background: red }
 .iki { background: yellow }
 .uc { background: #3200f0 }
-
 
 /* *********** STYLING LANGUAGE SELECTOR BUTTONS **************/
 .lang { position: relative }
@@ -126,7 +127,6 @@ header {
 
 .lang-en { color: #000 }
 
-
 /* *********** STYLING ELEMENTS OFFCANVAS **************/
 .offcanvas { width: 100%!important }
 
@@ -176,8 +176,7 @@ header {
     transition: .4s;
 }
 
-
-/* ***********START - STYLING ELEMENTS SWIPER**************/
+/* *********** START - STYLING ELEMENTS SECTION-1 **************/
 .section-1__btn-mobile {
     width: 100%;
     padding: 0 26px;
@@ -256,7 +255,7 @@ header {
 }
 
 .swiper-slide__desc {
-    font: 800 22px/28px "CocoSharp";
+    font: 400 22px/28px "CocoSharp";
     letter-spacing: -0.4px;
 }
 
@@ -353,15 +352,536 @@ header {
     color: #000;
 }
 
+/* *********** START - STYLING ELEMENTS SECTION-2 **************/
+.section-2 {
+    min-height: 100vh;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.section-2__title {
+    font: 800 28px/34px "CocoSharp";
+    color: #222;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.products {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    width: 100%;
+    text-align: center;
+    
+}
+.products-item { padding: 0 20px }
+.products-item__title {
+    font: 700 22px/28px "CocoSharp";
+    color: #222;
+    letter-spacing: .2px;
+}
+
+.products-item__desc {
+    font-family: "CocoSharp";
+    font-weight: 400;
+    line-height: 20px;
+    font-size: 14px;
+    letter-spacing: .2px;
+}
+
+.products-item {
+    position: relative;
+    padding-top: 50px;
+    width: 350px;
+    background: #e2f4d4;
+    border-radius: 15px;
+}
+
+/* *********** START - STYLING ELEMENTS SECTION-3 **************/
+.section-3 {
+    background: #f2f4f6;
+    min-height: 100vh;
+    padding: 110px 0 50px;
+}
+
+.section-3__content {
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 70px;
+    position: relative;
+}
+
+.section-3__text {
+    width: 50%;
+    padding-right: 20px;
+}
+
+.section-3__title {
+    font-weight: bold;
+    font: 800 28px/28px "CocoSharp";
+    color: #7c4e56;
+    margin-bottom: 20px;
+}
+
+.section-3__desc {
+    font: 400 16px "CocoSharp";
+    color: #000;
+    line-height: 1.43;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+.section-3__btn {
+    font: 800 14px/20px "CocoSharp";
+    display: inline-block;
+    color: #fff;
+    border-radius: 25px;
+    padding: 15px 45px;
+    background: #7c4e56;
+    border: 1px solid #7c4e56;
+    -webkit-box-shadow: 0 10px 10px -10px rgba(124, 78, 86, 0.51);
+    box-shadow: 0 10px 10px -10px rgba(124, 78, 86, 0.51);
+    -webkit-transition: 300ms all ease;
+    transition: 300ms all ease;
+}
+
+.section-3__img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.section-3__img img { height: 500px }
+
+/* *********** START - STYLING ELEMENTS SECTION-4 **************/
+.section-4 { padding-top: 80px }
+.section-4__text {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.section-4__title {
+    font: 300 45px "CocoSharp";
+    text-align: center;
+    line-height: 100%;
+    margin-bottom: 30px;
+}
+
+.section-4__desc {
+    font: 400 18px "CocoSharp";
+    text-align: center;
+    line-height: normal;
+    margin-bottom: 30px;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.grid-item {
+    margin: 0 0 20px;
+    width: 100%;
+    height: 400px;
+    border-radius: 20px;
+}
+
+.parent a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.parent span {
+    font: 400 20px "CocoSharp";
+    line-height: normal;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgba(0,97,165,.3);
+}
+    
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+.div2 { grid-area: 1 / 1 / 2 / 3; }
+.div3 { grid-area: 1 / 3 / 2 / 4; }
+.div4 { grid-area: 1 / 4 / 2 / 5; }
+.div5 { grid-area: 2 / 1 / 3 / 2; }
+.div6 { grid-area: 2 / 2 / 3 / 3; }
+.div7 { grid-area: 2 / 3 / 3 / 4; }
+.div8 { grid-area: 2 / 3 / 3 / 5; }
+.div9 { grid-area: 3 / 1 / 4 / 2; }
+.div10 { grid-area: 3 / 2 / 4 / 3; }
+.div11 { grid-area: 3 / 3 / 4 / 4; }
+.div12 { grid-area: 3 / 4 / 4 / 5; }
+.div13 { grid-area: 4 / 1 / 5 / 2; }
+.div14 { grid-area: 4 / 1 / 5 / 3; }
+.div15 { grid-area: 4 / 3 / 5 / 4; }
+.div16 { grid-area: 4 / 4 / 5 / 5; }
+
+.div2__content { background: url('../img/grid-1.jpg') center/cover no-repeat }
+.div3__content { background:  url('../img/grid-2.jpg') center/cover no-repeat }
+.div4__content { background:  url('../img/grid-3.jpg') center/cover no-repeat }
+.div5__content { background:  url('../img/grid-4.jpg') center/cover no-repeat }
+.div6__content { background:  url('../img/grid-5.jpg') center/cover no-repeat }
+.div8__content { background:  url('../img/grid-6.jpg') center/cover no-repeat }
+.div9__content { background:  url('../img/grid-7.jpg') center/cover no-repeat }
+.div10__content { background: url('../img/grid-1.jpg') center/cover no-repeat }
+.div11__content { background:  url('../img/grid-2.jpg') center/cover no-repeat }
+.div12__content { background:  url('../img/grid-3.jpg') center/cover no-repeat }
+.div14__content { background:  url('../img/grid-6.jpg') center/cover no-repeat }
+.div15__content { background:  url('../img/grid-7.jpg') center/cover no-repeat }
+.div16__content { background:  url('../img/grid-3.jpg') center/cover no-repeat }
+
+
+/* *********** START - STYLING ELEMENTS SECTION-5 **************/
+.section-5 {
+    padding: 80px 0px;
+    background-color: rgb(243, 245, 249);
+    margin-top: 50px;
+}
+
+.section-5__title {
+    font: 700 40px "CocoSharp";
+    color: rgb(0, 105, 180);
+    line-height: 130%;
+}
+
+.section-5__questions {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.section-5__questions-item1, .section-5__questions-item2 {
+    flex: 0 0 auto;
+    width: calc(50% - 12px);
+}
+
+.question-block {
+    border-bottom: 1px solid rgb(234, 235, 238);
+    padding: 32px 16px 16px 48px;
+    position: relative;
+}
+
+.question-text {
+    font: 700 20px "CocoSharp";
+    color: #0b1742;
+    padding-bottom: 16px;
+    cursor: pointer;
+}
+
+.question-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 36px;
+    left: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+.question-btn::before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 16px;
+    background-color: rgb(0, 105, 180);
+    transform: translate(8px, 0px);
+    transition: all 300ms ease-out 0s;
+}
+
+.question-btn::after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 1px;
+    background-color: rgb(0, 105, 180);
+    transform: translate(0px, -8px);
+    transition: all 300ms ease-out 0s;
+}
+
+
+.question-drop {
+    max-height: 600px;
+    overflow: hidden;
+    max-height: 0px;
+    transition: all 300ms ease-out 0s;
+    color: rgb(11, 23, 66);
+    will-change: auto;
+}
+
+.question-drop__text {
+    font: 400 16px "CocoSharp";
+    line-height: 150%;
+}
+
+
+/* *********** START - STYLING ELEMENTS SECTION-6 **************/
+.section-6 {
+    min-height: 650px;
+}
+
+.section-6__inner {
+    display: flex;
+    padding: 50px 0;
+}
+
+ .section-6__text {
+    float: right;
+    width: 54.5208333vw;
+ }
+.section-6__title {
+    font: 700 44px "CocoSharp";
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.section-6__desc {
+    font: 400 18px "CocoSharp";
+    padding-bottom: 10px;
+}
+
+.section-6__btn {
+    font: 700 25px "CocoSharp";
+    color: #01ac6a;
+}
+
+.companies {
+    width: 100%;
+    height: 650px;
+    font-size: 0;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.company-1 { background: url('../img/company-1.png') center/cover no-repeat}
+.company-2 { background: url('../img/company-2.png') center/cover no-repeat }
+.company-3 { background: url('../img/company-3.png') center/cover no-repeat }
+.company-4 { background: url('../img/company-4.png') center/cover no-repeat }
+.company-5 { background: url('../img/company-5.png') center/cover no-repeat }
+.company-6 { background: url('../img/company-6.png') center/cover no-repeat }
+
+.section-6 span {
+    background-size: 55%;
+    width: 33%;
+    height: 122px;
+    opacity: .3;
+    display: inline-block;
+}
+
+
+/* *********** START - STYLING ELEMENTS SECTION-7 **************/
+.section-7 {
+    padding: 75px 0;
+    background-color: #0dd478;
+}
+
+.fa-arrow-up {
+    color: #000;
+    transform: rotate(45deg);
+    font-size: 25px;
+    font-weight: 300;
+    margin-top: 10px;
+    transition: 300ms
+
+}
+
+.section-7__title {
+    font: 600 38px "CocoSharp";
+    color: #fff;
+    padding-right: 20px;
+    margin-bottom: 0;
+}
+
+.action-btn { transition: 300ms }
+
+.buttons {
+    display: flex;
+    align-items: end;
+}
+
+.buttons .action-btn:first-child {
+    background-color: #fff;
+    margin-top: 40px;
+    margin-right: 15px;
+    display: block;
+    min-width: 250px;
+    min-height: 150px;
+    padding: 32px;
+    border-radius: 10px;
+    transition: 300ms
+}
+
+.buttons .action-btn:last-child {
+    background-color: transparent;
+    margin-top: 40px;
+    margin-right: 15px;
+    display: block;
+    min-width: 260px;
+    min-height: 190px;
+    padding: 32px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    transition: 300ms
+}
+
+.buttons .action-btn span {
+    font: 600 25px "CocoSharp";
+    display: block;
+    margin-bottom: 18px;
+    color: #323232;
+    transition: 300ms
+}
+
+.buttons .action-btn:last-child span { color: #fff }
+.buttons .action-btn:last-child i { color: #fff  }
+
+/* *********** START - STYLING ELEMENTS SECTION-8 **************/
+.section-8 {
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+.section-8__title {
+    letter-spacing: -0.02em !important;
+    font-weight: 700 !important;
+    padding-bottom: 25px;
+    font-family: "CocoSharp";
+    font-size: 35px;
+}
+
+.img-container {
+    overflow: hidden!important;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    height: 222px!important;
+    margin-bottom: 35px;
+}
+
+.img-container img {
+    transition: all 0.3s ease-in-out;
+    max-height: 222px;
+    border-radius: 10px;
+    object-fit: cover;
+    transform: scale(1);
+    margin-bottom: 35px;
+}
+
+.details {
+    margin: 0;
+    line-height: 22px;
+    margin: 0 0 5px;
+    color: rgb(18, 20, 22);
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "CocoSharp";
+}
+
+
+
+/* *********** START - STYLING ELEMENTS FOOTER **************/
+footer {
+    padding: 50px 0 0 0;
+}
+
+.footer__top-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__top-item h3 {
+    color: #000;
+    font: bold 16px "CocoSharp";
+    margin: 20px 0 14px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.footer__top-item a {
+    color: rgba(0, 0, 0, 0.5);
+    font: 400 14px/1.25 "CocoSharp";
+    -webkit-transition: 0.3s ease-out;
+    transition: 0.3s ease-out;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.footer__icons {
+    margin-bottom: 70px
+}
+
+
+.footer__icons {
+    gap: 50px;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer__icons a i {
+    display: block;
+    color: #b2b2b2;
+    font-size: 25px;
+    transition: 0.3s ease-out;
+}
+
+.footer__bottom {
+    border-top: 1px solid #ededed;
+    padding: 16px 0;
+}
+
+.footer__menu {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.footer__menu li {
+    margin-right: 20px;
+}
+
+.footer__menu li a {
+    color: rgba(0, 0, 0, 0.5);
+    font: 400 16px/1.25 "CocoSharp";
+    transition: 0.3s ease-out;
+}
+
+.copyright {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.copyright span, .copyright p {
+    color: rgba(0, 0, 0, 0.5);
+
+    font: 400 14px "CocoSharp";
+    letter-spacing: 0.1px;
+}
+
+
 
 /* *********** HOVER EFFECTS **************/
 .menu__item:hover .drop { display: block }
+
 .btn-open:hover { background: #3200f0!important }
 .btn-open:hover .bar { background: #fff }
+
 .section-1__btn:hover, .section-1__btn-mobile-content:hover {
     border-color: #491df2; 
     background-color: #491df2 
 }
+
 .lang__content:hover .lang-arrow { border: 1px solid #3200f0 }
 
 .my-prev-button:hover, .my-next-button:hover { background-color: #3200f0 }
@@ -389,15 +909,44 @@ header {
 
 .btn_whatsapp:hover svg { fill: #fff }
 
+.parent a:hover {
+    color: #a2aeb9;
+    border-bottom-color: #a2aeb9;
+    transition: all .3s;
+}
 
-/* *********** CLASSES ADDED THROUGH JS **************/
+.parent a:hover div { box-shadow: 0 0 25px rgba(127,176,210,.5) }z
+
+.buttons .action-btn:first-child:hover {  
+    box-shadow: 0 10px 22px 0 rgba(41, 44, 50, 0.1);
+    transform: translate(0px, -4px);
+}
+
+.buttons .action-btn:hover {  
+    box-shadow: 0 10px 22px 0 rgba(41, 44, 50, 0.1);
+    transform: translate(0px, -4px);
+    background: #fff;
+}
+
+.buttons .action-btn:first-child:hover span, .buttons .action-btn:last-child:hover span { color: #0dd478 }
+.buttons .action-btn:first-child:hover i, .buttons .action-btn:last-child:hover i{ color: #0dd478 }
+
+.footer__top-item a:hover, .footer__icons i:hover, .footer__menu li a:hover  { color: #7c4e56 }
+
+
+.img-container img:hover { transform: scale(1.1) }
+
+
+/************ CLASSES ADDED THROUGH JS **************/
 .linkHoverStyle::before { opacity: 1 }
 .textHoverColorLinks { color: #333!important }
 .textHoverColorLinks .lang__content { color: #333!important }
 
 .textHoverColorLinks2 { color: #333!important  }
-.headerHoverBackg { background: #fff }
-.headerHoverBackg2 { background: #fff!important }
+.textHoverColorLinks2 span { color: #333!important  }
+
+.headerHoverBackg { background: #fff; box-shadow: 0 5px 10px 0 #3d3d3d1f; }
+.headerHoverBackg2 { background: #fff!important; box-shadow: 0 5px 10px 0 #3d3d3d1f; }
 .animationDrowLang { top: 50px; opacity: 1 }
 .animationArrowLang  { transform: rotate(180deg); background: #fff }
 .animationArrowLang svg { fill: #000!important }
@@ -408,6 +957,23 @@ header {
 .btnOpenHover { background-color: #3200f0!important }
 .btnOpenHover .bar { background: #fff }
 
+.question-active { max-height: 600px!important }
+.question-active__btn::after { transform: translate(0.5px, -8px) rotate(-45deg)!important }
+.question-active__btn::before { transform: translate(8px, 0.5px) rotate(135deg)!important }
+
+
+
+@media only screen and (max-width: 990px) {
+    .section-3__content { padding: 70px 30px }
+    .section-3__img img { height: 400px }
+    .grid-item { height: 300px }
+
+    .section-5__questions { display: block }
+    .section-5__questions-item1, .section-5__questions-item2 { width: 100% }
+
+    .section-6__inner { flex-direction: column }
+    .section-6__text { width: 100% }
+}
 
 @media only screen and (max-width: 900px) {
     .swiper-slide__title { font: 800 40px "CocoSharp" }
@@ -419,8 +985,8 @@ header {
         height: 55px;
         padding: 20px;
     }
-}
 
+}
 
 @media only screen and (max-width: 768px) {
     .menu, .lang { display: none }
@@ -433,15 +999,82 @@ header {
         flex-direction: column-reverse;
         align-items: center;
     }
+
     .section-1__btn-mobile { display: block }
     .section-1__btn { display: none }
     .swiper-slide__inner, .swiper__btns { margin-bottom: 50px }
     .btn_whatsapp { bottom: 180px }
-
     .my-prev-button, .my-next-button { width: 35px; height: 35px }
     .my-prev-button svg, .my-next-button svg { width: 15px }
+    .swiper-slide__inner { width: 100% }
 
-    .swiper-slide__inner {
-        width: 100%;
+    .products { flex-direction: column; align-items: center }
+    .products-item { width: 100% }
+
+    .section-2 {  padding: 50px 20px }
+
+    .section-3__content { display: block; padding: 40px 30px 170px }
+    .section-3__text { width: 100%; padding: 0 }
+    .section-3__img img { height: 300px }
+
+    .section-4__title { font-size: 30px }
+
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
     }
+        
+    .div1 { grid-area: 1 / 1 / 2 / 2; }
+    .div2 { grid-area: 1 / 1 / 2 / 3; }
+    .div3 { grid-area: 2 / 1 / 3 / 2; }
+    .div4 { grid-area: 2 / 2 / 3 / 3; }
+    .div5 { grid-area: 3 / 1 / 4 / 2; }
+    .div6 { grid-area: 3 / 2 / 4 / 3; }
+    .div7 { grid-area: 4 / 1 / 5 / 2; }
+    .div8 { grid-area: 4 / 1 / 5 / 3; }
+    .div9 { grid-area: 5 / 1 / 6 / 2; }
+    .div10 { grid-area: 5 / 2 / 6 / 3; }
+    .div11 { grid-area: 6 / 1 / 7 / 2; }
+    .div12 { grid-area: 6 / 2 / 7 / 3; }
+    .div13 { grid-area: 7 / 1 / 8 / 2; }
+    .div14 { grid-area: 7 / 1 / 8 / 3; }
+    .div15 { grid-area: 8 / 1 / 9 / 2; }
+    .div16 { grid-area: 8 / 2 / 9 / 3; }
+
+    .grid-item { height: 200px }
+
+    .section-6 span { background-size: 65% }
+    
+}
+
+@media only screen and (max-width: 600px) {
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .buttons .action-btn {
+        min-width: inherit;
+        width: 100%;
+        margin-right: inherit!important;
+        min-height: inherit!important;
+    }
+
+    .section-7__title { font-size: 30px; text-align: center; }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+    .section-3__content { padding: 20px 30px 74px }
+    .section-3__desc { margin-bottom: 30px }
+    .section-3__img img { height: 160px }
+
+    .section-6 span { width: 50% }
+    .section-6__inner { padding: 30px 0 }
+
 }
