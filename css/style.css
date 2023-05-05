@@ -44,7 +44,7 @@ header {
     opacity: 0;
 }
 
-.menu__item a {
+.menu__item a, .menu-mobile__item a {
     display: flex;
     align-items: center;
     font: 800 16px "CocoSharp";
@@ -52,6 +52,45 @@ header {
     cursor: pointer;
     min-height: 92px;
 }
+
+.offcanvas-body {
+    padding: 0!important;
+}
+
+.mobile-footer__icons {
+    margin-top: 20px!important;
+    background: #fff;
+    padding: 40px 0;
+    border-radius: 15px;
+}
+
+.menu-mobile {
+    background: #fff;
+    margin-top: 20px!important;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.menu-mobile__item {
+    display: flex;
+}
+
+.menu-mobile__item a {
+    color: #000;
+    min-height: inherit;
+    font: 400 25px "CocoSharp";
+    padding-bottom: 15px;
+}
+
+.menu-mobile__item svg {
+    width: 6.5px;
+    height: 6.5px;
+    margin: 0 0 10px 5.5px;
+    color: #3200f0;
+    fill: currentColor;
+}
+
+
 
 .drop {
     display: none;
@@ -128,6 +167,14 @@ header {
 .lang-en { color: #000 }
 
 /* *********** STYLING ELEMENTS OFFCANVAS **************/
+.offcanvas {
+    background: #f5f5f5;
+}
+
+.offcanvas-header {
+    border-radius: 0 0 15px 15px;
+    background: #fff;
+}
 .offcanvas { width: 100%!important }
 
 .btn-open {
@@ -325,7 +372,7 @@ header {
     border-radius: 30px;
     background: #00e676;
     padding: 0 15px;
-    transition: transform 150ms ease 0s;
+    transition: transform 150ms ease , bottom 1s ease;
     box-sizing: border-box;
     font-family: "Arial", sans-serif;
     vertical-align: baseline;
@@ -399,6 +446,7 @@ header {
     width: 350px;
     background: #e2f4d4;
     border-radius: 15px;
+    transition: all ease .4s;
 }
 
 /* *********** START - STYLING ELEMENTS SECTION-3 **************/
@@ -933,8 +981,13 @@ footer {
 
 .footer__top-item a:hover, .footer__icons i:hover, .footer__menu li a:hover  { color: #7c4e56 }
 
-
+.products-item:hover {  transform: scale(.9); }
 .img-container img:hover { transform: scale(1.1) }
+
+.section-3__btn:hover {
+    background-color: #fff;
+    color: #7c4e56;
+}
 
 
 /************ CLASSES ADDED THROUGH JS **************/
@@ -964,6 +1017,7 @@ footer {
 
 
 @media only screen and (max-width: 990px) {
+
     .section-3__content { padding: 70px 30px }
     .section-3__img img { height: 400px }
     .grid-item { height: 300px }
@@ -976,19 +1030,6 @@ footer {
 }
 
 @media only screen and (max-width: 900px) {
-    .swiper-slide__title { font: 800 40px "CocoSharp" }
-    .swiper-slide__desc { font: 800 16px/23px "CocoSharp" }
-    .my-prev-button, .my-next-button { width: 55px; height: 55px }
-
-    .section-1__btn {
-        width: 190px;
-        height: 55px;
-        padding: 20px;
-    }
-
-}
-
-@media only screen and (max-width: 768px) {
     .menu, .lang { display: none }
     .header__navbar { padding: 16px }
     .btn-open { display: flex!important }
@@ -1007,6 +1048,20 @@ footer {
     .my-prev-button, .my-next-button { width: 35px; height: 35px }
     .my-prev-button svg, .my-next-button svg { width: 15px }
     .swiper-slide__inner { width: 100% }
+
+    .swiper-slide__title { font: 800 40px "CocoSharp" }
+    .swiper-slide__desc { font: 800 16px/23px "CocoSharp" }
+    .my-prev-button, .my-next-button { width: 55px; height: 55px }
+
+    .section-1__btn {
+        width: 190px;
+        height: 55px;
+        padding: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
 
     .products { flex-direction: column; align-items: center }
     .products-item { width: 100% }

@@ -28,6 +28,7 @@ const dropdownLang = document.querySelector(".dropdown__lang");
 const langArrow = document.querySelector(".lang-arrow");
 const btnOpen = document.querySelector(".btn-open");
 const questionText = document.querySelectorAll(".question-text");
+const btnWp = document.querySelector('.btn_whatsappIndex');
 
 questionText.forEach((item) => {
     const questionDrop = item.nextElementSibling;
@@ -40,25 +41,25 @@ questionText.forEach((item) => {
 });
 
 function hoverEffectFunc1() {
-    header.classList.add("headerHoverBackg");
+    /*header.classList.add("headerHoverBackg"); ---------------1 */
     lang.classList.add("textHoverColorLinks");
     langArrow.classList.add("borderHoverLang");
 }
 
 function hoverEffectFunc2() {
-    header.classList.remove("headerHoverBackg");
+    /*header.classList.remove("headerHoverBackg") ---------------1; */
     lang.classList.remove("textHoverColorLinks");
     langArrow.classList.remove("borderHoverLang");
 }
 
 menu.addEventListener("mouseover", () => {
-    hoverEffectFunc1();
-    links.forEach((item) => item.classList.add("textHoverColorLinks"));
+    /*hoverEffectFunc1();*/
+    /*links.forEach((item) => item.classList.add("textHoverColorLinks"));*/
 });
 
 menu.addEventListener("mouseout", () => {
-    hoverEffectFunc2();
-    links.forEach((item) => item.classList.remove("textHoverColorLinks"));
+    /*hoverEffectFunc2();*/
+    /*links.forEach((item) => item.classList.remove("textHoverColorLinks"));*/
 });
 
 links.forEach((item) => item.addEventListener("mouseover", () => item.classList.add("linkHoverStyle")));
@@ -78,6 +79,15 @@ window.addEventListener("scroll", () => {
         btnOpen.classList.remove("btnOpenHover");
         links.forEach((item) => item.classList.remove("textHoverColorLinks2"));
     }
+
+    if (document.documentElement.scrollTop > window.innerHeight / 2) {
+        // изменяем значение CSS свойства bottom
+        btnWp.style.bottom = '20px'; // например, 20px
+      } else if ((document.documentElement.scrollTop < window.innerHeight / 2) && window.innerWidth < 900) {
+        btnWp.style.bottom = '180px'; // возвращаем изначальное значение
+      } else if ((document.documentElement.scrollTop < window.innerHeight / 2) && window.innerWidth >= 900) {
+        btnWp.style.bottom = '130px'; // возвращаем изначальное значение
+      }
 });
 
 lang.addEventListener("click", () => {

@@ -49,14 +49,14 @@ header { background: #fff }
 }
 
 .breadcumb .active {
-    border-color: #df4847!important;
-    background-color: #df4847!important;
+    border-color: #309dc5!important;
+    background-color: #309dc5!important;
     color: white!important;
 }
 
 .breadcumb a:hover {
-    border-color: #df4847!important;
-    background-color: #df4847!important;
+    border-color: #309dc5!important;
+    background-color: #309dc5!important;
     color: white!important;
 }
 
