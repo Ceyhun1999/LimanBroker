@@ -22,10 +22,15 @@ const swiper = new Swiper(".swiper", {
 const nav = document.querySelector(".header__navbar");
 const links = document.querySelectorAll(".menu__item-link");
 const header = document.querySelector("header");
-const lang = document.querySelector(".lang");
 const menu = document.querySelector(".menu");
+const lang = document.querySelector(".lang");
 const dropdownLang = document.querySelector(".dropdown__lang");
 const langArrow = document.querySelector(".lang-arrow");
+
+const langMob = document.querySelector(".lang-mobile");
+const dropdownLangMob = document.querySelector(".dropdown__lang-mobile");
+const langArrowMob = document.querySelector(".lang-arrow_mobile");
+
 const btnOpen = document.querySelector(".btn-open");
 const questionText = document.querySelectorAll(".question-text");
 const btnWp = document.querySelector('.btn_whatsappIndex');
@@ -43,13 +48,17 @@ questionText.forEach((item) => {
 function hoverEffectFunc1() {
     /*header.classList.add("headerHoverBackg"); ---------------1 */
     lang.classList.add("textHoverColorLinks");
+    langMob.classList.add("textHoverColorLinks");
     langArrow.classList.add("borderHoverLang");
+    langArrowMob.classList.add("borderHoverLang");
 }
 
 function hoverEffectFunc2() {
     /*header.classList.remove("headerHoverBackg") ---------------1; */
     lang.classList.remove("textHoverColorLinks");
+    langMob.classList.remove("textHoverColorLinks");
     langArrow.classList.remove("borderHoverLang");
+    langArrowMob.classList.remove("borderHoverLang");
 }
 
 menu.addEventListener("mouseover", () => {
@@ -69,25 +78,21 @@ window.addEventListener("scroll", () => {
     if (document.documentElement.scrollTop > 0) {
         header.classList.add("headerHoverBackg2");
         lang.classList.add("textHoverColorLinks2");
+        langMob.classList.add("textHoverColorLinks2");
         langArrow.classList.add("borderHoverLang2");
+        langArrowMob.classList.add("borderHoverLang2");
         btnOpen.classList.add("btnOpenHover");
         links.forEach((item) => item.classList.add("textHoverColorLinks2"));
     } else {
         header.classList.remove("headerHoverBackg2");
         lang.classList.remove("textHoverColorLinks2");
+        langMob.classList.remove("textHoverColorLinks2");
         langArrow.classList.remove("borderHoverLang2");
+        langArrowMob.classList.remove("borderHoverLang2");
         btnOpen.classList.remove("btnOpenHover");
         links.forEach((item) => item.classList.remove("textHoverColorLinks2"));
     }
 
-    if (document.documentElement.scrollTop > window.innerHeight / 2) {
-        // изменяем значение CSS свойства bottom
-        btnWp.style.bottom = '20px'; // например, 20px
-      } else if ((document.documentElement.scrollTop < window.innerHeight / 2) && window.innerWidth < 900) {
-        btnWp.style.bottom = '180px'; // возвращаем изначальное значение
-      } else if ((document.documentElement.scrollTop < window.innerHeight / 2) && window.innerWidth >= 900) {
-        btnWp.style.bottom = '130px'; // возвращаем изначальное значение
-      }
 });
 
 lang.addEventListener("click", () => {
@@ -95,6 +100,11 @@ lang.addEventListener("click", () => {
     langArrow.classList.toggle("animationArrowLang");
 });
 
+
+langMob.addEventListener("click", () => {
+    dropdownLangMob.classList.toggle("animationDrowLang");
+    langArrowMob.classList.toggle("animationArrowLang");
+});
 
 var inputs = document.querySelectorAll('input[type="text"]');
 

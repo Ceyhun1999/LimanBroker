@@ -15,47 +15,37 @@
     <link rel="stylesheet" href="/css/team.css" />
 </head>
 <body>
-    <header>
+    <header class="header_boxShadow">
         <nav class="header__navbar my-container">
-            <a class="logo" href="">
+            <a class="logo" href="/">
                 <img src="/img/logo_az.png" alt="Logo LimanBroker">
             </a>
             <ul class="menu">
                 <li class="menu__item">
                     <a class="menu__item-link" href="/">Ana səhifə</a>
-                    <div class="drop bir">
-                        dsfsdfdsf
-                    </div>
                 </li>
                 <li class="menu__item">
                     <a class="menu__item-link" href="/about.html">Şirkət</a>
-                    <div class="drop iki">
-                        dsfsdfdsf
-                    </div>
                 </li>
                 <li class="menu__item">
                     <a class="menu__item-link" href="/service.html">Xidmətlər</a>
-                    <div class="drop uc">
-                        dsfsdfdsf
-                    </div>
                 </li>
                 <li class="menu__item">
                     <a class="menu__item-link" href="/references.html">Referanslar</a>
-                    <div class="drop bir">
-                        dsfsdfdsf
-                    </div>
                 </li>
                 <li class="menu__item">
                     <a class="menu__item-link" href="/blogs.html">Bloglar</a>
-                    <div class="drop iki">
-                        dsfsdfdsf
-                    </div>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__item-link" href="/team.html">Komandamız</a>
                 </li>
                 <li class="menu__item">
                     <a class="menu__item-link" href="/contact.html">Əlaqə</a>
-                    <div class="drop iki">
-                        dsfsdfdsf
-                    </div>
+                </li>
+                <li class="menu__btn">
+                    <a class="btn-request" href="/contact.html">
+                        <span>Sığorta sorğusu</span>
+                    </a>
                 </li>
             </ul>
             <div class="lang">
@@ -73,7 +63,6 @@
                     <a class="lang-az" href="">AZ</a>
                     <a class="lang-en" href="">EN</a>
                 </div>
-                <!--<a class="header__btn" href="">Online müraciət</a>-->
             </div>
             <button class="btn-open" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
                 aria-controls="offcanvasRight">
@@ -83,7 +72,9 @@
         </nav>
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
             <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                <a class="logo" href="/">
+                    <img src="/img/logo_az.png" alt="Logo LimanBroker">
+                </a>
                 <div class="btn-close_block">
                     <button type="button" class="btn-close_block-item" data-bs-dismiss="offcanvas" aria-label="Close">
                         <svg width="9" height="10" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#fff'>
@@ -94,7 +85,103 @@
                 </div>
             </div>
             <div class="offcanvas-body">
-                ...
+                <ul class="menu-mobile">
+                    <li class="menu-mobile__item">
+                        <a class="menu-mobile__item-link" href="/">Ana səhifə</a>
+                        <svg viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="mainMenuItemArrow_SPprM">
+                            <path
+                                d="M1.00044 0.899902H7.10044V6.9999H5.90044V2.94843L1.4247 7.42417L0.576172 6.57564L5.05191 2.0999H1.00044V0.899902Z">
+                            </path>
+                        </svg>
+                        <div class="lang-mobile">
+                            <div class="lang__content-mobile">
+                                <span>AZ</span>
+                                <div class="lang-arrow_mobile">
+                                    <svg fill="#fff" viewBox="0 0 8 8" xmlns="http://www.w3.org/2000/svg"
+                                        class="v-dropdown__arrow">
+                                        <path
+                                            d="M3.93661 4.02016L2.52911 2.61266C2.24275 2.3263 1.77847 2.3263 1.49211 2.61266C1.20575 2.89902 1.20575 3.3633 1.49211 3.64966L3.58306 5.7406C3.77832 5.93587 4.0949 5.93587 4.29017 5.7406L6.38111 3.64966C6.66747 3.3633 6.66747 2.89902 6.38111 2.61266C6.09475 2.3263 5.63047 2.3263 5.34411 2.61266L3.93661 4.02016Z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="dropdown__lang-mobile">
+                                <a class="lang-az" href="">AZ</a>
+                                <a class="lang-en" href="">EN</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a class="menu-mobile__item-link" href="/about.html">Şirkət</a>
+                        <svg viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="mainMenuItemArrow_SPprM">
+                            <path
+                                d="M1.00044 0.899902H7.10044V6.9999H5.90044V2.94843L1.4247 7.42417L0.576172 6.57564L5.05191 2.0999H1.00044V0.899902Z">
+                            </path>
+                        </svg>
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a class="menu-mobile__item-link" href="/service.html">Xidmətlər</a>
+                        <svg viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="mainMenuItemArrow_SPprM">
+                            <path
+                                d="M1.00044 0.899902H7.10044V6.9999H5.90044V2.94843L1.4247 7.42417L0.576172 6.57564L5.05191 2.0999H1.00044V0.899902Z">
+                            </path>
+                        </svg>
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a class="menu-mobile__item-link" href="/references.html">Referanslar</a>
+                        <svg viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="mainMenuItemArrow_SPprM">
+                            <path
+                                d="M1.00044 0.899902H7.10044V6.9999H5.90044V2.94843L1.4247 7.42417L0.576172 6.57564L5.05191 2.0999H1.00044V0.899902Z">
+                            </path>
+                        </svg>
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a class="menu-mobile__item-link" href="/blogs.html">Bloglar</a>
+                        <svg viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="mainMenuItemArrow_SPprM">
+                            <path
+                                d="M1.00044 0.899902H7.10044V6.9999H5.90044V2.94843L1.4247 7.42417L0.576172 6.57564L5.05191 2.0999H1.00044V0.899902Z">
+                            </path>
+                        </svg>
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a class="menu-mobile__item-link" href="/team.html">Komandamız</a>
+                        <svg viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="mainMenuItemArrow_SPprM">
+                            <path
+                                d="M1.00044 0.899902H7.10044V6.9999H5.90044V2.94843L1.4247 7.42417L0.576172 6.57564L5.05191 2.0999H1.00044V0.899902Z">
+                            </path>
+                        </svg>
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a class="menu-mobile__item-link" href="/contact.html">Əlaqə</a>
+                        <svg viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="mainMenuItemArrow_SPprM">
+                            <path
+                                d="M1.00044 0.899902H7.10044V6.9999H5.90044V2.94843L1.4247 7.42417L0.576172 6.57564L5.05191 2.0999H1.00044V0.899902Z">
+                            </path>
+                        </svg>
+                    </li>
+                </ul>
+
+                <div class="footer__icons mobile-footer__icons">
+                    <a href="">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </header>
