@@ -33,7 +33,7 @@ const langArrowMob = document.querySelector(".lang-arrow_mobile");
 
 const btnOpen = document.querySelector(".btn-open");
 const questionText = document.querySelectorAll(".question-text");
-const btnWp = document.querySelector('.btn_whatsappIndex');
+const btnWp = document.querySelector(".btn_whatsappIndex");
 
 questionText.forEach((item) => {
     const questionDrop = item.nextElementSibling;
@@ -92,7 +92,6 @@ window.addEventListener("scroll", () => {
         btnOpen.classList.remove("btnOpenHover");
         links.forEach((item) => item.classList.remove("textHoverColorLinks2"));
     }
-
 });
 
 lang.addEventListener("click", () => {
@@ -100,34 +99,35 @@ lang.addEventListener("click", () => {
     langArrow.classList.toggle("animationArrowLang");
 });
 
-
 langMob.addEventListener("click", () => {
     dropdownLangMob.classList.toggle("animationDrowLang");
     langArrowMob.classList.toggle("animationArrowLang");
 });
 
-var inputs = document.querySelectorAll('input[type="text"]');
-
-// проходимся по каждому инпуту и добавляем обработчик клика и blur
-inputs.forEach(function(input) {
-  input.addEventListener('click', function() {
-    // получаем родительский элемент label
-    var label = this.parentElement;
-    // находим соседний элемент span
-    var span = label.querySelector('span');
-    // сохраняем исходные значения свойств top и font-size
-    var originalTop = span.style.top;
-    var originalFontSize = span.style.fontSize;
-    // меняем свойство top на 10px
-    span.style.top = '10px';
-    // меняем размер шрифта на 14px
-    span.style.fontSize = '12px';
-    
-    // добавляем обработчик события blur
-    input.addEventListener('blur', function() {
-      // возвращаем исходные значения свойств top и font-size
-      span.style.top = originalTop;
-      span.style.fontSize = originalFontSize;
+const owlDots = document.querySelectorAll(".owl-dot");
+owlDots.forEach((dot, index) => {
+    dot.addEventListener("click", () => {
+        swiper.slideTo(index);
     });
-  });
 });
+swiper.on("slideChange", function () {
+    const activeIndex = swiper.activeIndex;
+
+    const prevIndex = this.previousIndex;
+    if (prevIndex >= 0) {
+        owlDots[prevIndex].classList.remove("active");
+    }
+
+    if (!owlDots[activeIndex].classList.contains("active")) {
+        owlDots[activeIndex].classList.add("active");
+    }
+
+    if (this.isEnd) {
+        setTimeout(() => {
+            swiper.slideTo(0);
+            swiper.update();
+        }, 2500);
+    }
+});
+
+
